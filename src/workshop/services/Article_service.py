@@ -1,9 +1,9 @@
 import fastapi
 from fastapi.responses import Response
 from fastapi import status
-import tables
-from database import get_session
-from models.Article_models import CreateArticle, UpdateArticle, Article
+import workshop.tables as tables
+from workshop.database import get_session
+from workshop.models.Article_models import CreateArticle, UpdateArticle, Article
 from fastapi import Depends
 from sqlalchemy.orm import Session
 

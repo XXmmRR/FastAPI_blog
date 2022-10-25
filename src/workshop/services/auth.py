@@ -2,20 +2,20 @@ import datetime
 import fastapi
 import sqlalchemy.exc
 from fastapi import Depends
-from database import Session, get_session
+from workshop.database import Session, get_session
 
 from jose import jwt, JWTError
 from passlib.hash import bcrypt
 
 from pydantic import ValidationError
 
-import tables
-from models.auth import Token
+import workshop.tables as tables
+from workshop.models.auth import Token
 
 from fastapi import status
 from fastapi import HTTPException
-from models.auth import User, UserCreate
-from settings import settings
+from workshop.models.auth import User, UserCreate
+from workshop.settings import settings
 
 from fastapi.security import OAuth2PasswordBearer
 

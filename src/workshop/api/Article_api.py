@@ -4,8 +4,8 @@ from fastapi import Depends
 from fastapi import Response
 from fastapi import status
 
-from models.Article_models import Article, CreateArticle, UpdateArticle
-from services.Article_service import ArticleService
+from workshop.models.Article_models import Article, CreateArticle, UpdateArticle
+from workshop.services.Article_service import ArticleService
 
 router = APIRouter(
     prefix='/article',

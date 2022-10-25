@@ -3,10 +3,10 @@ from fastapi.security import OAuth2PasswordRequestForm
 from fastapi import Depends
 from typing import List
 
-from services.auth import AuthService, get_current_user
+from workshop.services.auth import AuthService, get_current_user
 
 
-from models.auth import (
+from workshop.models.auth import (
     UserCreate,
     Token,
     User
